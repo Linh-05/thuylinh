@@ -1,6 +1,6 @@
 'use client'
 import { useActionState } from "react";
-import createPost from "@/actions/post";
+import createPost from "@/app/actions/post";
 
 export default function Page() {
     const [state, action, isPending] = useActionState(createPost, {
